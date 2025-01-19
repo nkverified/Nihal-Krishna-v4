@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nihal Krishna Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro Section -->
+  <div class="intro">
+    <h1 class="intro-title">Welcome to Nihal Krishna's Portfolio</h1>
+    <p class="intro-subtitle">Full-Stack Developer | Stock Trader | Graphic Designer</p>
+    <button class="intro-btn" onclick="scrollToSection('about')">Explore More</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Nihal Krishna, a versatile professional providing complete tech solutions...</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">Full-Stack Development</div>
+      <div class="skill">Graphic Design</div>
+      <div class="skill">Stock Trading</div>
+      <div class="skill">Digital Marketing</div>
+      <div class="skill">Tech Solutions</div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">Project 1</div>
+      <div class="portfolio-item">Project 2</div>
+      <div class="portfolio-item">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Nihal Krishna. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+
+  /* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(to right, #000, #001f3f, #004d4d);
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 50px;
+  background: black;
+}
+
+.intro-title {
+  font-size: 2.5rem;
+  animation: fade-in 2s ease-in;
+}
+
+.intro-subtitle {
+  font-size: 1.5rem;
+  color: #00ff99;
+}
+
+.intro-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #001f3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro-btn:hover {
+  background: #00ff99;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ff99;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #001f3f;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-item {
+  background: #004d4d;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  font-size: 14px;
+}
+
+/* Animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+</style>
+
+<script.js> 
+
+  function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+</script.js>
+
